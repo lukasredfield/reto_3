@@ -1,6 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
+from selenium.webdriver.common.alert import Alert
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 
 def Practica_raton():
@@ -148,7 +151,7 @@ def Practica_raton():
     
     click25_6 = driver.find_element("xpath", '//*[@id="canvas"]/table/tbody/tr[3]/td/a').click()
 
-    time.sleep(3)
+    time.sleep(1)
     click26 = driver.find_element("xpath", '/html').click()
     click26 = driver.find_element("xpath", '/html').click()
     click26 = driver.find_element("xpath", '/html').click()
@@ -167,7 +170,7 @@ def Practica_raton():
 
     click26_2 = driver.find_element("xpath", '/html/body/p[1]/a').click()
     
-    time.sleep(3)
+    time.sleep(1)
 
     for i in range(1,20):
         click27 = driver.find_element("xpath", '/html').click()
@@ -181,14 +184,14 @@ def Practica_raton():
 
     click28_2 = driver.find_element("xpath", '/html/body/div/p[2]/a').click()
 
-    time.sleep(3)
+    time.sleep(1)
 
     for i in range(1,10):
         click29 = driver.find_element("xpath", '/html').click()
 
     click29_2 = driver.find_element("xpath", '/html/body/table/tbody/tr/td[2]/p/a').click()
 
-    time.sleep(3)
+    time.sleep(1)
 
     for i in range(1,20):
         click30 = driver.find_element("xpath", '/html').click()
@@ -201,8 +204,11 @@ def Practica_raton():
     time.sleep(1)
 
     click31 = driver.find_element("xpath", '/html/body/table/tbody/tr/td/a').click()
+
     time.sleep(1)
-    click31 = driver.find_element("xpath", '/html/body/script[2]').click()
+
+    WebDriverWait(driver, 10).until(EC.alert_is_present())
+    driver.switch_to.alert.accept()
     
     time.sleep(1)
 
@@ -222,12 +228,12 @@ def Practica_raton():
 
     click33 = driver.find_element("xpath", '/html/body/p/a/img').click()
 
-    time.sleep(3)
+    time.sleep(1)
 
     click34 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input[1]').click()
     click34 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input[7]').click()
 
-    time.sleep(3)
+    time.sleep(1)
 
     click35 = driver.find_element("xpath", '/html/body/form/input[1]').click()
     click35 = driver.find_element("xpath", '/html/body/form/input[2]').click()
@@ -240,26 +246,40 @@ def Practica_raton():
     click35 = driver.find_element("xpath", '/html/body/form/input[9]').click()
     click35 = driver.find_element("xpath", '/html/body/p/a/img').click()
 
+    time.sleep(1)
+
+    click36 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input[1]').click()
+    click36 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input[5]').click()
+
+    time.sleep(1)
+
+    click37 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select').click()
+    click37 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[6]').click()
+    click37 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/p/a/img').click()
+
+    time.sleep(1)
+
+    click38 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select').click()
+    click38 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[7]').click()
+    click38 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/p/a/img').click()
+
+    time.sleep(1)
+
+    click39 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select').click()
+    click39 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[6]').click()
+    click39 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/p/a/img').click()
+
     time.sleep(3)
 
-    click36 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select').click()
-    click36 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[6]').click()
-    click36 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/p/a/img').click()
+    click40 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[2]').click()
+    click40 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input').click()
+    
 
-    # time.sleep(3)
+    time.sleep(3)
 
-    click36 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select').click()
-    click36 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[1]').click()
-    click36 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input').click()
-
-    # time.sleep(3)
-    # click38 = driver.find_element("xpath", '/html/body/table/tbody/tr/td[2]/p/a').click()
-    # time.sleep(3)
-    # click39 = driver.find_element("xpath", '/html/body/table/tbody/tr/td[2]/p/a').click()
-    # time.sleep(3)
-    # click40 = driver.find_element("xpath", '/html/body/table/tbody/tr/td[2]/p/a').click()
-    # time.sleep(3)
-    # click41 = driver.find_element("xpath", '/html/body/table/tbody/tr/td[2]/p/a').click()
+    click41 = driver.find_element("xpath", '/html/body/form/input[1]').click()
+    click41 = driver.find_element("xpath", '/html/body/form/input[2]').click()
+    click41 = driver.find_element("xpath", '/html/body/form/input[3]').click()
 
 
 if __name__ =='__main__':
