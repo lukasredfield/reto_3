@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
@@ -260,8 +261,8 @@ def Practica_raton():
     time.sleep(1)
 
     click38 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select').click()
-    click38 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[7]').click()
-    click38 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/p/a/img').click()
+    click38 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[2]').click()
+    click38 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input').click()
 
     time.sleep(1)
 
@@ -275,11 +276,23 @@ def Practica_raton():
     click40 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input').click()
     
 
+    time.sleep(1)
+
+    click41 = driver.find_element("xpath", '/html/body/form/input[1]')
+    
+    click41.send_keys("lucas")
+
     time.sleep(3)
 
-    click41 = driver.find_element("xpath", '/html/body/form/input[1]').click()
-    click41 = driver.find_element("xpath", '/html/body/form/input[2]').click()
+    click41 = driver.find_element("xpath", '/html/body/form/input[2]')
+    
+    click41.send_keys("guido")
+
+    time.sleep(3)
     click41 = driver.find_element("xpath", '/html/body/form/input[3]').click()
+
+    time.sleep(5)
+
 
 
 if __name__ =='__main__':
@@ -287,19 +300,3 @@ if __name__ =='__main__':
 
 
 
-# options = webdriver.ChromeOptions()
-# options.add_experimental_option('excludeSwitches', ['enable-logging'])
-# driver = webdriver.Chrome(options=options)
-
-
-
-
-# def Practica_raton():
-#     PATH = "C:\Program Files (x86)\chromedriver.exe"
-#     driver = webdriver.Chrome(PATH)
-#     driver.get("http://www.pbclibrary.org/raton/mousercise.htm")
-#     time.sleep(10)
-#     click = driver.find_element("xpath", '/html/body/table[2]/tbody/tr[2]/td/form/input')
-#     click.click()
-
-# Practica_raton()
