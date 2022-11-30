@@ -14,7 +14,7 @@ def Practica_raton():
     driver = webdriver.Chrome(executable_path, options=options)
     driver.get("http://www.pbclibrary.org/raton/mousercise.htm")
     time.sleep(1)
-    click = driver.find_element("xpath", '/html/body/table[2]/tbody/tr[2]/td/form/input').click()
+    click0 = driver.find_element("xpath", '/html/body/table[2]/tbody/tr[2]/td/form/input').click()
     time.sleep(1)
     click1 = driver.find_element("xpath", '/html/body/div/p/a').click()
     time.sleep(1)
@@ -292,11 +292,13 @@ def Practica_raton():
     click41 = driver.find_element("xpath", '/html/body/form/input[3]').click()
 
     time.sleep(5)
+    
 
-
-
+    
 if __name__ =='__main__':
     Practica_raton()
+
+
 
 
 
