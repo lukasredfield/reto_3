@@ -270,7 +270,7 @@ def Practica_raton():
     click39 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[6]').click()
     click39 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/p/a/img').click()
 
-    time.sleep(3)
+    time.sleep(1)
 
     click40 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/select/option[2]').click()
     click40 = driver.find_element("xpath", '/html/body/table/tbody/tr[2]/td/form/input').click()
@@ -294,7 +294,7 @@ def Practica_raton():
     time.sleep(5)
     
 
-    
+
 if __name__ =='__main__':
     Practica_raton()
 
